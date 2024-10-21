@@ -65,7 +65,3 @@
 ## 11. Viewing Branch Information
 - **Show current branches**
   git branch -v
-
-## 12. History
-- **Display command history**
-  history
