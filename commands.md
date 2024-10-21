@@ -1,18 +1,71 @@
-Prompt:
+ # Git Commands Reference
 
-Generate a series of Git commands for a project with the following steps:
+## 1. Directory Operations
+- **Create a directory**
+  mkdir git-for-devops
 
-Create a directory called git-for-devops and navigate into it.
-Create a file named hello.txt, view its contents, and then delete it.
-Initialize a Git repository in the directory.
-Create a file named hellp, view its contents, rename it to hello, and check the Git status.
-Delete the hello file and create new files named hello-decops.txt, nibba.txt, and nibbi.txt. Check the status after each action.
-Remove hello-decops.txt, add nibbi.txt and nibba.txt to the staging area, and commit the changes.
-Remove nibbi.txt, restore it, and configure the global Git user information.
-Edit nibbi.txt, add it, and commit the changes.
-Edit nibba.txt, add it, and commit the changes.
-Create and switch to a branch named dev, create a file named nibbu.txt, add it, and commit the changes.
-Switch back to the master branch, check the logs, and handle branch information.
-Create a file named ram, add it, and commit the changes.
-Display the logs in various formats and show branch information.
-Finally, display the command history.
+- **Navigate into the directory**
+  cd git-for-devops
+
+## 2. File Operations
+- **Create a file**
+  echo "Hello, World!" > hello.txt
+
+- **View file contents**
+  cat hello.txt
+
+- **Delete a file**
+  rm hello.txt
+
+## 3. Git Initialization
+- **Initialize a Git repository**
+  git init
+
+## 4. File Renaming
+- **Rename a file**
+  mv hellp hello
+
+## 5. Git Status
+- **Check the status of the repository**
+  git status
+
+## 6. Staging and Committing
+- **Add files to staging area**
+  git add filename.txt
+
+- **Commit changes**
+  git commit -m "Commit message"
+
+## 7. Branching
+- **Create and switch to a new branch**
+  git checkout -b branch-name
+
+- **Switch back to the master branch**
+  git checkout master
+
+## 8. Logging
+- **View commit logs**
+  git log
+
+- **View logs in one line**
+  git log --oneline
+
+- **View logs as a graph**
+  git log --graph --oneline --decorate
+
+## 9. Configuration
+- **Set global Git user information**
+  git config --global user.name "Your Name"
+  git config --global user.email "youremail@example.com"
+
+## 10. File Restoration
+- **Restore a deleted file**
+  git restore filename.txt
+
+## 11. Viewing Branch Information
+- **Show current branches**
+  git branch -v
+
+## 12. History
+- **Display command history**
+  history
